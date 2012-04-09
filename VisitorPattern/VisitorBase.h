@@ -16,7 +16,7 @@ public:
     VisitorBase(){};
     virtual ~VisitorBase(){};
     
-    virtual float GetTotalSalary() = 0;
+    virtual int GetTotalSalary() = 0;
     virtual void visit(ManagerEmployee aemployee) = 0;
     virtual void visit(CommonEmployee aemployee) = 0;
 };
