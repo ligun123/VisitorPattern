@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B24C7B0C1532E15200FCCA05 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24C7B0B1532E15200FCCA05 /* main.cpp */; };
 		B24C7B0E1532E15200FCCA05 /* VisitorPattern.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B24C7B0D1532E15200FCCA05 /* VisitorPattern.1 */; };
+		B2FCA7DA1532E3D900D2BD6E /* HRVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FCA7D91532E3D900D2BD6E /* HRVisitor.cpp */; };
+		B2FCA7DD1532E40600D2BD6E /* Employee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FCA7DC1532E40600D2BD6E /* Employee.cpp */; };
+		B2FCA7E01532E43E00D2BD6E /* ManagerEmployee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FCA7DF1532E43E00D2BD6E /* ManagerEmployee.cpp */; };
+		B2FCA7E31532E46F00D2BD6E /* CommonEmployee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FCA7E21532E46F00D2BD6E /* CommonEmployee.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,15 @@
 		B24C7B071532E15200FCCA05 /* VisitorPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VisitorPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24C7B0B1532E15200FCCA05 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B24C7B0D1532E15200FCCA05 /* VisitorPattern.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VisitorPattern.1; sourceTree = "<group>"; };
+		B2FCA7D71532E27900D2BD6E /* VisitorBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisitorBase.h; sourceTree = "<group>"; };
+		B2FCA7D81532E3CD00D2BD6E /* HRVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRVisitor.h; sourceTree = "<group>"; };
+		B2FCA7D91532E3D900D2BD6E /* HRVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HRVisitor.cpp; sourceTree = "<group>"; };
+		B2FCA7DB1532E3EB00D2BD6E /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		B2FCA7DC1532E40600D2BD6E /* Employee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Employee.cpp; sourceTree = "<group>"; };
+		B2FCA7DE1532E43400D2BD6E /* ManagerEmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerEmployee.h; sourceTree = "<group>"; };
+		B2FCA7DF1532E43E00D2BD6E /* ManagerEmployee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ManagerEmployee.cpp; sourceTree = "<group>"; };
+		B2FCA7E11532E46000D2BD6E /* CommonEmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonEmployee.h; sourceTree = "<group>"; };
+		B2FCA7E21532E46F00D2BD6E /* CommonEmployee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonEmployee.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +73,17 @@
 		B24C7B0A1532E15200FCCA05 /* VisitorPattern */ = {
 			isa = PBXGroup;
 			children = (
-				B24C7B0B1532E15200FCCA05 /* main.cpp */,
 				B24C7B0D1532E15200FCCA05 /* VisitorPattern.1 */,
+				B24C7B0B1532E15200FCCA05 /* main.cpp */,
+				B2FCA7D71532E27900D2BD6E /* VisitorBase.h */,
+				B2FCA7D81532E3CD00D2BD6E /* HRVisitor.h */,
+				B2FCA7D91532E3D900D2BD6E /* HRVisitor.cpp */,
+				B2FCA7DB1532E3EB00D2BD6E /* Employee.h */,
+				B2FCA7DC1532E40600D2BD6E /* Employee.cpp */,
+				B2FCA7DE1532E43400D2BD6E /* ManagerEmployee.h */,
+				B2FCA7DF1532E43E00D2BD6E /* ManagerEmployee.cpp */,
+				B2FCA7E11532E46000D2BD6E /* CommonEmployee.h */,
+				B2FCA7E21532E46F00D2BD6E /* CommonEmployee.cpp */,
 			);
 			path = VisitorPattern;
 			sourceTree = "<group>";
@@ -117,6 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B24C7B0C1532E15200FCCA05 /* main.cpp in Sources */,
+				B2FCA7DA1532E3D900D2BD6E /* HRVisitor.cpp in Sources */,
+				B2FCA7DD1532E40600D2BD6E /* Employee.cpp in Sources */,
+				B2FCA7E01532E43E00D2BD6E /* ManagerEmployee.cpp in Sources */,
+				B2FCA7E31532E46F00D2BD6E /* CommonEmployee.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +227,7 @@
 				B24C7B131532E15200FCCA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

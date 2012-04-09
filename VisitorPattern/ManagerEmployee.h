@@ -1,0 +1,17 @@
+//
+//  ManagerEmployee.h
+//  VisitorPattern
+//
+//  Created by Gun Li on 4/9/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#ifndef VisitorPattern_ManagerEmployee_h
+#define VisitorPattern_ManagerEmployee_h
+#include "Employee.h"
+
+class ManagerEmployee : public Employee {
+public:
+};
+
+#endif
