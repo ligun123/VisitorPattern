@@ -18,11 +18,11 @@ void HRVisitor::Visit(Employee *employee)
 void HRVisitor::Visit(ManagerEmployee *employee)
 {
     std::string info = employee->Infomation();
-    printf("do with base manager employee->%s\n",info.c_str());
+    printf("do sth diffirent with base manager employee->%s\n",info.c_str());
 }
 
 void HRVisitor::Visit(CommonEmployee *employee)
 {
     std::string info = employee->Infomation();
-    printf("do with base common employee->%s\n",info.c_str());
+    printf("do sth diffirent with base common employee->%s\n",info.c_str());
 }
