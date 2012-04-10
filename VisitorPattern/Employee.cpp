@@ -8,3 +8,8 @@
 
 #include <iostream>
 #include "Employee.h"
+
+void Employee::Accept(VisitorBase *visitor)
+{
+    visitor->Visit(this);
+}

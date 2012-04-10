@@ -8,11 +8,16 @@
 
 #ifndef VisitorPattern_Employee_h
 #define VisitorPattern_Employee_h
+#include "VisitorBase.h"
 
-class Employee{
+class VisitorBase;
+
+class Employee {
 public:
-    Employee();
-    virtual ~Employee();
+    Employee(){}
+    virtual ~Employee(){}
+    
+    virtual void Accept(VisitorBase *visitor);
+    virtual std::string Infomation() = 0;
 };
-
 #endif

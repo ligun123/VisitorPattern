@@ -8,17 +8,19 @@
 
 #ifndef VisitorPattern_Visitor_h
 #define VisitorPattern_Visitor_h
-#include "Employee.h"
-#include "ManagerEmployee.h"
-#include "CommonEmployee.h"
+
+class Employee;
+class ManagerEmployee;
+class CommonEmployee;
 
 class VisitorBase {
 public:
-    VisitorBase(){};
-    virtual ~VisitorBase(){};
+    VisitorBase(){}
+    virtual ~VisitorBase(){}
     
-    virtual int GetTotalSalary() = 0;
-    virtual void visit(Employee employee) = 0;
+    virtual void Visit(Employee *yee) = 0;
+    virtual void Visit(ManagerEmployee *employee) = 0;
+    virtual void Visit(CommonEmployee *employee) = 0;
 };
 
 #endif

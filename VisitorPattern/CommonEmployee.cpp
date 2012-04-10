@@ -8,3 +8,21 @@
 
 #include <iostream>
 #include "CommonEmployee.h"
+std::string CommonEmployee::Infomation()
+{
+    return m_name + " is " + m_job;
+}
+
+void CommonEmployee::setName(std::string name)
+{
+    m_name = name;
+}
+void CommonEmployee::setJob(std::string job)
+{
+    m_job = job;
+}
+
+void CommonEmployee::Accept(VisitorBase *visitor)
+{
+    visitor->Visit(this);
+}
